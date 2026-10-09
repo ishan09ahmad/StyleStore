@@ -9,8 +9,8 @@ import Orders from "../pages/Orders";
 import PlaceOrder from "../pages/PlaceOrder";
 import Shop from "../pages/Shop";
 import Contact from "../pages/Contact";
-import Home from "../pages/Home";
 import ProductDetails from "../pages/ProductDetails";
+import Home from "../pages/Home";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<RootLayout />}>
