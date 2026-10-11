@@ -4,7 +4,7 @@ import Footer from "../pages/Footer";
 
 export default function RootLayout() {
   return (
-    <div className="w-screen min-h-screen ">
+    <div className="w-screen min-h-screen">
       <Navbar />
       <main>
         <Outlet />
