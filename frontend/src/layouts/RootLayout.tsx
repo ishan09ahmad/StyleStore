@@ -4,12 +4,12 @@ import Footer from "../pages/Footer";
 
 export default function RootLayout() {
   return (
-    <div className="w-screen min-h-screen">
+   <div className="min-h-screen max-w-full">
       <Navbar />
-      <main>
+      <main className="min-h-[calc(100vh-64px)]">
         <Outlet />
       </main>
-  <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }

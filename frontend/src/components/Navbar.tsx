@@ -19,7 +19,7 @@ export default function Navbar() {
   const [showLogout, setShowLogout] = useState<boolean>(false);
 
   const isAppLoading: boolean = false;
-  const userLoggedIn: boolean = true;
+  const userLoggedIn: boolean = false;
   const cartCount: number = 2;
 
   const location = useLocation();
@@ -113,7 +113,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center text-[#111111]"
             >
-              <User className="size-5 stroke-[1.6] transition-transform duration-200 hover:scale-110" />
+              <User className="size-6 stroke-[1.6] transition-transform duration-200 hover:scale-110" />
             </Link>
           )}
 
