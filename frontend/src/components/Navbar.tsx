@@ -142,7 +142,7 @@ export default function Navbar() {
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="relative flex size-7 items-center justify-center text-[#111111] sm:hidden"
+            className="relative flex size-7 items-center justify-center text-[#111111] sm:hidden cursor-pointer"
           >
             <Menu
               className={`absolute size-6 transition-all duration-300 ${
