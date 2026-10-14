@@ -2,7 +2,7 @@ import { Mail, MessageCircle } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="bg-[#F5F0E8]">
+    <main className="bg-[#F5F0E8] min-h-[calc(100vh-64px)]">
    
       <section className="mx-auto flex max-w-350 flex-col items-center justify-center gap-4 px-4 py-16 text-center sm:px-6 sm:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#75685A]">
@@ -174,6 +174,6 @@ export default function Contact() {
 
 
       </section>
-    </div>
+    </main>
   );
 }

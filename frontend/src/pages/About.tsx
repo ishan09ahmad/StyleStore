@@ -4,7 +4,7 @@ import image from "../assets/image.jpg";
 
 export default function About() {
   return (
-    <div className="bg-[#F5F0E8]">
+  <main className="bg-[#F5F0E8] min-h-[calc(100vh-64px)]">
 
       <section className="w-full border-b border-[#DCD3C6]">
         <div className="mx-auto flex max-w-350 flex-col items-center justify-center gap-4 px-4 py-12 text-center sm:px-6 sm:py-18 ">
@@ -116,7 +116,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-350 px-4 py-16 text-center sm:px-6 sm:py-20 lg:py-24 border-b-4 border-white">
+      <section className="mx-auto max-w-350 px-4 py-16 text-center sm:px-6 sm:py-20 lg:py-24">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#75685A]">
           Your style journey
         </p>
@@ -136,6 +136,6 @@ export default function About() {
           Explore Collection <span aria-hidden="true">→</span>
         </Link>
       </section>
-    </div>
+    </main>
   );
 }

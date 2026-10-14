@@ -6,7 +6,7 @@ import {
 import RootLayout from "../layouts/RootLayout";
 import ProtectedRoutes from "./ProtectedRoutes";
 import PublicRoutes from "./PublicRoutes";
-import LogIn from "../pages/LogIn";
+
 import Register from "../pages/Register";
 import Cart from "../pages/Cart";
 import Orders from "../pages/Orders";
@@ -16,6 +16,9 @@ import Contact from "../pages/Contact";
 import ProductDetails from "../pages/ProductDetails";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Login from "../pages/Login";
+import ForgotPassword from "../pages/ForgotPassword";
+import ResetPassword from "../pages/ResetPassword";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +26,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />}></Route>
 
       <Route element={<PublicRoutes />}>
-        <Route path="/login" element={<LogIn />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Route>
 
@@ -31,6 +34,8 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="product/:id" element={<ProductDetails />}></Route>
+      <Route path="/forgot-password" element={<ForgotPassword />}></Route>
+      <Route path="/reset-password" element={<ResetPassword />}></Route>
 
       <Route element={<ProtectedRoutes />}>
         <Route path="/cart" element={<Cart />}></Route>

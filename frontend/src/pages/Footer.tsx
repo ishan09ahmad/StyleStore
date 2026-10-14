@@ -19,7 +19,7 @@ const footerList2: FooterlistTye[] = [
 ];
 function Footer() {
   return (
-    <footer className="bg-[#F5F0E8] ">
+    <footer className="bg-[#F5F0E8] border-t border-[#DCD3C6]">
       <div className="mx-auto max-w-350 bg-[#F5F0E8] px-5 text-[#5F5A53] sm:px-8 lg:px-12">
         <section className="border-b border-[#DCD3C6] py-8 sm:py-10 ">
           <h2 className="text-2xl font-extrabold tracking-tight text-[#111111]">

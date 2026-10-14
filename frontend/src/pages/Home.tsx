@@ -1,4 +1,3 @@
-
 import heroImage from "../assets/home/Hero.jpg";
 import manImage from "../assets/home/man.jpg";
 import womanImage from "../assets/home/woman.jpg";
@@ -52,7 +51,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-[#F5F0E8]">
+    <main className="bg-[#F5F0E8] min-h-[calc(100vh-64px)]">
    
       <section className="mx-auto grid max-w-350 grid-cols-1 items-center gap-10 px-4 py-8 sm:px-6 sm:py-12 md:py-16 md:grid-cols-2 md:gap-8 lg:gap-14 lg:py-20 border-b-4 border-white">
         <div className="flex items-center">
@@ -197,7 +196,7 @@ export default function Home() {
       </section>
 
       
-       <section className="mx-auto max-w-350 flex flex-col items-center justify-center px-4 sm:px-6 py-12  md:py-16 lg:py-20 lg:pb-24 border-b-4 border-white">
+       <section className="mx-auto max-w-350 flex flex-col items-center justify-center px-4 sm:px-6 py-12  md:py-16 lg:py-20 lg:pb-24 ">
       
 
         <h2 className="text-2xl font-semibold tracking-tight text-[#111111] sm:text-3xl lg:text-4xl">
@@ -216,6 +215,6 @@ export default function Home() {
         </Link>
       </section>
 
-    </div>
+    </main>
   );
 }
